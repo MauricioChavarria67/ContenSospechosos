@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<data-sources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/data-sources-10_1.xsd" xmlns="http://xmlns.oracle.com/oracleas/schema">
+    <connection-pool name="jdev-connection-pool-DBCmchavarria">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="mchavarria" password="->DataBase_User_BYq7of67Yw4V9GPbqTDSGc9t2ACsDsi-J44UPP60fT0=" url="jdbc:oracle:thin:@172.25.1.138:1521:asy_db"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-DBCmchavarria" jndi-name="jdbc/DBCmchavarriaDS" connection-pool-name="jdev-connection-pool-DBCmchavarria"/>
+    <native-data-source name="jdev-connection-native-DBCmchavarria" jndi-name="jdbc/DBCmchavarriaCoreDS" url="jdbc:oracle:thin:@172.25.1.138:1521:asy_db" user="mchavarria" password="->DataBase_User_thRY2VrucbHlYLihzuaq4oREssvWdCXtPcP3RUeWEag=" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-Ora-UsrContentSosp" disable-server-connection-pooling="false">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="usrcontensosp" password="->DataBase_User_Il5MWjwXK5hrOtJ0GFnRMXgd8skv0_Y5QNlzy6lGaNkCJ4RJbRma6w==" url="jdbc:oracle:thin:@172.25.1.138:1521:asy_db"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-Ora-UsrContentSosp" jndi-name="jdbc/Ora-UsrContentSospDS" connection-pool-name="jdev-connection-pool-Ora-UsrContentSosp"/>
+    <native-data-source name="jdev-connection-native-Ora-UsrContentSosp" jndi-name="jdbc/Ora-UsrContentSospCoreDS" url="jdbc:oracle:thin:@172.25.1.138:1521:asy_db" user="usrcontensosp" password="->DataBase_User_Tif3pPxI7stpinvLr3xTAeWjJ_OGTXm6aU8rPrLR5KItrBwp1dDOqg==" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-DGA_Manpago">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="manpago" password="->DataBase_User__VvNwJd2ZCP0VYPK8Jyr6tAJFD1H1aIX" url="jdbc:oracle:thin:@172.25.1.138:1521:asy_db"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-DGA_Manpago" jndi-name="jdbc/DGA_ManpagoDS" connection-pool-name="jdev-connection-pool-DGA_Manpago"/>
+    <native-data-source name="jdev-connection-native-DGA_Manpago" jndi-name="jdbc/DGA_ManpagoCoreDS" url="jdbc:oracle:thin:@172.25.1.138:1521:asy_db" user="manpago" password="->DataBase_User_AjpSOU3mVMdPp-sjChoSX1qiGrlT3RFk" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-PUD">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="pud" password="->DataBase_User_VHGIBXtRI4dw_wQ4nYYJL2uQx5hDRYD_" url="jdbc:oracle:thin:@192.168.96.2:1521:SIIPNC"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-PUD" jndi-name="jdbc/PUDDS" connection-pool-name="jdev-connection-pool-PUD"/>
+    <native-data-source name="jdev-connection-native-PUD" jndi-name="jdbc/PUDCoreDS" url="jdbc:oracle:thin:@192.168.96.2:1521:SIIPNC" user="pud" password="->DataBase_User_zMhsAflmyovbeCWEk3UTsTk5uFeu0Vav" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-Prueba">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="HR" password="->DataBase_User_buJQRd_3mFwbur6OFa1HZBxVoECOP6BKbQM37Dbajy0=" url="jdbc:oracle:thin:@localhost:1521:Prueba"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-Prueba" jndi-name="jdbc/PruebaDS" connection-pool-name="jdev-connection-pool-Prueba"/>
+    <native-data-source name="jdev-connection-native-Prueba" jndi-name="jdbc/PruebaCoreDS" url="jdbc:oracle:thin:@localhost:1521:Prueba" user="HR" password="->DataBase_User_CuM-hQoY32lqBBrB75DAvtz4vQDCvHVyCokEprxcl0c=" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-ModRecISSS">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="MOD_RECAUDACION" password="->DataBase_User_K5ys_906UFGFpT4p9WrtkHrLia3zu0hTgwR0mOWFBI8=" url="jdbc:oracle:thin:@db-dev.isss.gob.sv:1521:appdb"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-ModRecISSS" jndi-name="jdbc/ModRecISSSDS" connection-pool-name="jdev-connection-pool-ModRecISSS"/>
+    <native-data-source name="jdev-connection-native-ModRecISSS" jndi-name="jdbc/ModRecISSSCoreDS" url="jdbc:oracle:thin:@db-dev.isss.gob.sv:1521:appdb" user="MOD_RECAUDACION" password="->DataBase_User_KfzgNSJ1tT12AcoU7uZLouE481AuKyGh1v8nzDK-gNE=" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-ASY_DB">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="manpago" password="->DataBase_User_JJZ0yMcnLfyMkEHAM594x1avb7ZlwOqe" url="jdbc:oracle:thin:@//172.25.1.138:1521/ASY_DB"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-ASY_DB" jndi-name="jdbc/ASY_DBDS" connection-pool-name="jdev-connection-pool-ASY_DB"/>
+    <native-data-source name="jdev-connection-native-ASY_DB" jndi-name="jdbc/ASY_DBCoreDS" url="jdbc:oracle:thin:@//172.25.1.138:1521/ASY_DB" user="manpago" password="->DataBase_User_UewrjhyDXKl-4evXd3pf92adxqA7_ufq" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-DBSubastas">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="DBSUBASTAS" password="->DataBase_User_Te0QnDnOA3NPeHwmtqKS3fCzO_JNfaZiM4l2PnnmGMw=" url="jdbc:oracle:thin:@172.25.1.138:1521:ASY_DB"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-DBSubastas" jndi-name="jdbc/DBSubastasDS" connection-pool-name="jdev-connection-pool-DBSubastas"/>
+    <native-data-source name="jdev-connection-native-DBSubastas" jndi-name="jdbc/DBSubastasCoreDS" url="jdbc:oracle:thin:@172.25.1.138:1521:ASY_DB" user="DBSUBASTAS" password="->DataBase_User_cULC3VYVNKB-vUxWOL8Prpa2zS8Sa4PaM1xWS2Ta05w=" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-OraUsrRiesgos1">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="usrriesgos1" password="->DataBase_User_ZAo6HDByHePJydDP3oIcFuXw6cQ594TBuzX_GJETx6g=" url="jdbc:oracle:thin:@172.25.1.138:1521:asy_db"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-OraUsrRiesgos1" jndi-name="jdbc/OraUsrRiesgos1DS" connection-pool-name="jdev-connection-pool-OraUsrRiesgos1"/>
+    <native-data-source name="jdev-connection-native-OraUsrRiesgos1" jndi-name="jdbc/OraUsrRiesgos1CoreDS" url="jdbc:oracle:thin:@172.25.1.138:1521:asy_db" user="usrriesgos1" password="->DataBase_User_EniAulAQZd1LNDaYYrKyks9MBTpzh2xjf1OqfPCKggg=" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-DBConMCh">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="mchavarria" password="->DataBase_User_5D1S73Xu83PYrIqczb0WZtCxnE6pYdgxpy5-0Q-Aprg=" url="jdbc:oracle:thin:@172.25.1.138:1521:asy_db"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-DBConMCh" jndi-name="jdbc/DBConMChDS" connection-pool-name="jdev-connection-pool-DBConMCh"/>
+    <native-data-source name="jdev-connection-native-DBConMCh" jndi-name="jdbc/DBConMChCoreDS" url="jdbc:oracle:thin:@172.25.1.138:1521:asy_db" user="mchavarria" password="->DataBase_User_0dYWioBysI7DWmsOrZr_GcYF4NJZuMW9ZXJKaAKtus8=" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-Ora12c-UsrMauricioTorres-Test">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="&quot;mauricio.torres&quot;" password="->DataBase_User_4fvcjRujZ46WhIumhjf1Rf3dTYPbm6qZ6r9-Ca2DIo0=" url="jdbc:oracle:thin:@//172.25.1.250:1523/asywdesa"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-Ora12c-UsrMauricioTorres-Test" jndi-name="jdbc/Ora12c-UsrMauricioTorres-TestDS" connection-pool-name="jdev-connection-pool-Ora12c-UsrMauricioTorres-Test"/>
+    <native-data-source name="jdev-connection-native-Ora12c-UsrMauricioTorres-Test" jndi-name="jdbc/Ora12c-UsrMauricioTorres-TestCoreDS" url="jdbc:oracle:thin:@//172.25.1.250:1523/asywdesa" user="&quot;mauricio.torres&quot;" password="->DataBase_User_rZdj4yWAU0Hz21Hehkg1h0FsZzsKECi98aZszWoWzV0=" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-DBConnDgaDgme">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="dgadgme" password="->DataBase_User_4qcVsQCNaozwPQMXHSCF9Yk2G0wWOXHwQ8zrQ6kSxMY=" url="jdbc:oracle:thin:@172.25.1.138:1521:asy_db"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-DBConnDgaDgme" jndi-name="jdbc/DBConnDgaDgmeDS" connection-pool-name="jdev-connection-pool-DBConnDgaDgme"/>
+    <native-data-source name="jdev-connection-native-DBConnDgaDgme" jndi-name="jdbc/DBConnDgaDgmeCoreDS" url="jdbc:oracle:thin:@172.25.1.138:1521:asy_db" user="dgadgme" password="->DataBase_User_wsiFzWFOTLqnfEB65eOwJMtAH9msReFQq0xGomA6who=" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+    <connection-pool name="jdev-connection-pool-Ora12c-UsrMGR5-Test">
+        <connection-factory factory-class="oracle.jdbc.pool.OracleDataSource" user="MGR5" password="->DataBase_User_2nqFIzasTEbBGjk0x-dZWFNmDzAFF_Wr8wwStFUPwep-mqgJdAmQUA==" url="jdbc:oracle:thin:@//192.168.95.112:1523/asywtest.aduana.gobierno"/>
+    </connection-pool>
+    <managed-data-source name="jdev-connection-managed-Ora12c-UsrMGR5-Test" jndi-name="jdbc/Ora12c-UsrMGR5-TestDS" connection-pool-name="jdev-connection-pool-Ora12c-UsrMGR5-Test"/>
+    <native-data-source name="jdev-connection-native-Ora12c-UsrMGR5-Test" jndi-name="jdbc/Ora12c-UsrMGR5-TestCoreDS" url="jdbc:oracle:thin:@//192.168.95.112:1523/asywtest.aduana.gobierno" user="MGR5" password="->DataBase_User_8C3vLJqnTMvSL27erxE8cuIXChHOltdcrCbvBEKs3tyC5XX0i4U4lg==" data-source-class="oracle.jdbc.pool.OracleDataSource"/>
+</data-sources>

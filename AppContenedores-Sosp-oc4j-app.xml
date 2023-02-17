@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<orion-application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/orion-application-10_0.xsd">
+    <web-module id="ContenSosp" path="file:/C:/Chavarria/Proyectos/DGA/Mauricio Chavarria/Contenedores Sosp-ADF - Produc/Contenedores-Sosp-ADF/VistaControlador/public_html/"/>
+    <web-module id="ContenSosp-MD" path="file:/C:/Chavarria/Proyectos/DGA/Mauricio Chavarria/Contenedores Sosp-ADF - Produc/Contenedores-Sosp-ADF/ModeloDatos/public_html/"/>
+    <library path="C:\Chavarria\Proyectos\DGA\Mauricio Chavarria\Contenedores Sosp-ADF - Produc\Contenedores-Sosp-ADF\.adf">jdev-generated</library>
+    <log>
+        <file path="AppContenedores-Sosp-oc4j-app.log"/>
+    </log>
+    <jazn provider="XML" location="AppContenedores-Sosp-jazn-data.xml" default-realm="jazn.com"/>
+    <data-sources path="AppContenedores-Sosp-data-sources.xml"/>
+</orion-application>
